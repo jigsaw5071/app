@@ -1,0 +1,27 @@
+<div class="container-fluid">
+<br><br>
+	<form class="form-login" role="form" name="formLogin">
+		<h4 class="form-login-heading" style="margin-left:15%;">Enter Your Details</h4>
+		<br>
+		<br>
+		<br>
+		<div class="form-group">
+			<input type="text" class="form-control" placeholder="Username" ng-model="loginData.userName" required autofocus />
+		</div>
+		<div class="form-group">
+			<input id="inputPass" type="password" class="form-control" placeholder="***" ng-model="loginData.password" required />
+		</div>
+
+
+		<button class="btn btn-lg btn-info btn-block" type="submit" ng-click="formLogin.$valid && loginUser()">Login</button>
+          <br>
+
+		<div>
+			{{message}}
+		</div>
+		<br>
+		<br><br><br>
+
+	</form>
+
+</div>
