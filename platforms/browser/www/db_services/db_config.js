@@ -1,9 +1,10 @@
- // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyBchwn3cKadrOAPXQTfUAoCztii5UQ6SCU",
-    authDomain: "safetyproject-fc1e0.firebaseapp.com",
-    databaseURL: "https://safetyproject-fc1e0.firebaseio.com",
-    storageBucket: "safetyproject-fc1e0.appspot.com",
-    messagingSenderId: "1006590926103"
-  };
-  firebase.initializeApp(config);
+	 // Initialize Firebase
+	 var config = {
+	 	apiKey:constants.db_config.apiKey ,
+	 	authDomain: constants.db_config.authDomain,
+	 	databaseURL:constants.db_config.databaseURL ,
+	 	storageBucket: constants.db_config.storageBucket,
+	 	messagingSenderId: constants.db_config.messagingSenderId,
+	 };
+
+	 firebase.initializeApp(config);

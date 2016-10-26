@@ -6,22 +6,23 @@
 		<br>
 		<br>
 		<div class="form-group">
-			<input type="text" class="form-control" placeholder="Username" ng-model="loginData.userName" required autofocus />
+			<input type="text" class="form-control" placeholder="Username" ng-model="loginData.username" required autofocus />
 		</div>
 		<div class="form-group">
-			<input id="inputPass" type="password" class="form-control" placeholder="***" ng-model="loginData.password" required />
+			<input id="inputPass" type="password" class="form-control" placeholder="******" ng-model="loginData.password" required />
 		</div>
 
 
 		<button class="btn btn-lg btn-info btn-block" type="submit" ng-click="formLogin.$valid && loginUser()">Login</button>
-          <br>
-
-		<div>
-			{{message}}
-		</div>
-		<br>
-		<br><br><br>
+          <br> <br>
 
 	</form>
+	<button type="button" class="btn btn-primary" style="margin-right: 3%" ng-click="signupClick()">Signup</button>
+	<button type="button" class="btn btn-primary" ng-click="forPassClick()">Forgot Passoword</button>
+	<br><br>
+	<div style="font-weight: bold; ">
+		{{message}}
+	</div>
+
 
 </div>
