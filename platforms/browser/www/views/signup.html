@@ -1,0 +1,88 @@
+<div class="container">
+  <div class="row">
+  	<div class="col-md-6">
+
+      <form class="form-horizontal form-login" role="form" name="formLogin" >
+        <fieldset>
+          <div style="font-weight: bold;">
+            <legend class="">Register</legend>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label" for="fullname">Fullname</label>
+            <div class="controls">
+              <input type="text"  name="fullname" placeholder="fullname" ng-model="signupData.fullname" class="form-control input-lg" autofocus>
+              <p class="help-block">Full Name can contain First Name + Last Name  or only First Name</p>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label" for="username">Username</label>
+            <div class="controls">
+              <input type="text" name="username" placeholder="username" ng-model="signupData.username" class="form-control input-lg" required autofocus>
+              <p class="help-block">Username can contain any letters or numbers, without spaces</p>
+            </div>
+          </div>
+
+           <div class="control-group">
+            <label class="control-label" for="age">Age</label>
+            <div class="controls">
+              <input type="text" name="age" placeholder="age" ng-model="signupData.age" class="form-control input-lg" required autofocus>
+              <p class="help-block">Age Should only be in years eg 26</p>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label" for="email">E-mail</label>
+            <div class="controls">
+              <input type="email" name="email" placeholder="a@b.com" ng-model="signupData.email" class="form-control input-lg" required autofocus>
+              <p class="help-block">Please provide your E-mail</p>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label" for="password">Password</label>
+            <div class="controls">
+              <input type="password" name="password" placeholder="******" ng-model="signupData.password" class="form-control input-lg" required autofocus>
+              <p class="help-block">Password should be at least 6 characters</p>
+            </div>
+          </div>
+
+          <div class="control-group">
+           <div class="checkbox">
+           <label><input type="checkbox" ng-model="signupData.is_doctor">Is Medical Practitioner</label>
+          </div>
+        </div>
+
+         <div class="control-group">
+           <div class="checkbox">
+           <label><input type="checkbox" ng-model="signupData.is_male">Tick If Male</label>
+          </div>
+        </div>
+
+          <div class="control-group">
+            <label class="control-label" for="speciality">Speciality</label>
+            <div class="controls">
+              <input type="text" name="speciality" placeholder="speciality" ng-model="signupData.speciality" class="form-control input-lg" autofocus>
+              <p class="help-block">speciality like neuro surgeon,etc</p>
+            </div>
+          </div>
+
+
+          
+
+
+        <div class="control-group">
+          
+          <button class="btn btn-lg btn-info btn-block" type="submit" ng-click="formLogin.$valid && signupUser()">Register</button>
+        </div>
+      </fieldset>
+    </form>
+    <br>
+    <div style="font-weight: bold;">
+      {{message}}
+    </div>
+    
+  </div> 
+</div>
+</div>
